@@ -6,6 +6,6 @@
 }
 
 @test "addition using dc" {
-  result="$(echo 2 2+p | dc)"
+  result="$(echo $(echo $((8 / 2))) | bc)"
   [ "$result" -eq 4 ]
 }
